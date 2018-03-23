@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+a.logo:link{color: white; 
+            text-decoration: none; 
+			font-size:35px;
+            transition:all 0.5s ease;
+            -webkit-transition-delay:all 0.5s ease;
+            -moz-transition-delay:all 0.5s ease;
+            -ms-transition-delay:all 0.5s ease;
+            -o-transition-delay:all 0.5s ease;
+			}
+a.logo:hover{color: #004d40; 
+             text-decoration: none;
+             transition:all 0.5s ease;
+             -webkit-transition-delay:all 0.5s ease;
+             -moz-transition-delay:all 0.5s ease;
+             -ms-transition-delay:all 0.5s ease;
+             -o-transition-delay:all 0.5s ease;
+			 }
+
+</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Matrimony</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+      <div class="container">
+        <div class="nav-wrapper"><a id="logo-container" href="dhangar.html" class="brand-logo">dhangar</a>
+          <ul id="nav-mobile" class="right side-nav">
+            <li><a class="white-text" href="news_main.html">News</a></li>
+            <li><a href="#work">Jobs</a></li>
+            <li><a href="#contact">Matrimonial</a></li>
+             <li><a href="donate.html" target="_blank">Donate</a></li>
+			<li><?php session_start();
+$check = $_SESSION['login'];
+if($check) echo '<a href="logout.php">Logout</a>';
+else echo '<a href="index.php">Login</a>'; ?></li>
+		  </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modernizr.js"></script>

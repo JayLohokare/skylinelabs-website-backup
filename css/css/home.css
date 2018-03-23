@@ -1,0 +1,83 @@
+.divBigBlue{
+	height:100vh;
+	width:100vw;
+	position:absolute;
+}
+
+.btn-menu {
+  height: 10vmin;
+  width: 10vmin;
+  line-height: 10vmin;
+}
+
+.nexar-Logo{
+	height: 15vmin;
+	width: 15vmin;
+	top:calc(100vh-15vmin);
+	left:3vmin;
+}
+
+.newClass{
+	height:200vmax;
+	width:200vmax;
+	  position: f;
+	background-color: #00f;
+}
+
+.count-particles{
+  background: #ffffff;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #ffffff;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #00;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.heading-divider{
+	display:block;
+	width:60px;
+	height:3px;
+	background:#fbc02d;
+	margin:12px auto
+}
+
+body{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+}
+
+
+
+main {
+   -webkit-box-flex: 1;
+   -webkit-flex: 1 0 auto;
+       -ms-flex: 1 0 auto;
+           flex: 1 0 auto;
+ }

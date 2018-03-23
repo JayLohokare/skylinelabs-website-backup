@@ -1,0 +1,574 @@
+<html lang = "en" itemscope itemtype="https://schema.org/Blog">
+
+
+    <head>
+		<title>Skyline Blog | Reinvent the wheel : Google open sources tensorflow and seesaw within a span of months</title>
+
+		<meta name="msapplication-TileColor" content="#2196f3">
+		<meta name="msapplication-TileImage" content="https://www.skylinelabs.in/images/Logo/s_small.png">
+
+ 
+
+<meta itemprop="name" content="Skyline Blog | Reinvent the wheel : Google open sources tensorflow and seesaw within a span of months">
+<meta itemprop="description" content="Information and latest updates about google tensorflow and seesaw">
+<meta itemprop="image" content="https://www.skylinelabs.in/blog/images/tensorflow.jpg" />
+
+
+  
+<meta property="og:type" content="article" />
+<meta property="og:title"              content="Skyline Blog | Reinvent the wheel : Google open sources tensorflow and seesaw within a span of months" />
+<meta property="og:description"        content="Information and latest updates about google tensorflow and seesaw" />
+<meta property="og:image"              content="https://www.skylinelabs.in/blog/images/tensorflow.jpg" />
+<meta property="og:image:url"              content="https://www.skylinelabs.in/blog/images/tensorflow.jpg" />
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="https://www.skylinelabs.in/blog/images/tensorflow.jpg">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@skylinelabs" />
+<meta name="twitter:creator" content="@skylinelabs" /
+<meta name="twitter:title" content="Skyline Blog | Reinvent the wheel : Google open sources tensorflow and seesaw within a span of months" />
+<meta name="twitter:description" content="Information and latest updates about google tensorflow and seesaw" />
+<meta name="twitter:image" content="https://www.skylinelabs.in/blog/images/tensorflow.jpg" />
+
+ 
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Skyline Blog | Reinvent the wheel : Google open sources tensorflow and seesaw within a span of months">
+<meta itemprop="description" content="Information and latest updates about google tensorflow and seesaw">
+<meta itemprop="image" content="https://www.skylinelabs.in/blog/images/tensorflow.jpg">
+
+
+
+
+
+
+		<meta name="theme-color" content="#2196f3">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.skylinelabs.in/images/Logo/s_small.png" />
+		<link rel="apple-touch-icon-precomposed" href="https://www.skylinelabs.in/images/Logo/s_small.png">
+
+                <link rel="icon" sizes="192x192" href="https://www.skylinelabs.in/images/Logo/s_small.png">
+
+    
+		<meta name="keywords" content="Skyline blog, Skyline labs blog, Blog, Tech blog, Skyline labs, Skyline lab, Google tensorflow,google seesaw,open source" />
+		<meta name="description" content="Information and latest updates about google tensorflow and seesaw">
+
+		<meta name="author" content="Abhilash Mhaisne">
+
+ 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=false" />
+		<meta name="viewport" content="user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<meta name="theme-color" content="#2196f3">
+		
+		
+
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+		 
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="https://www.skylinelabs.in/js/js/materialize.min.js"></script>
+		
+	
+		
+		<!---------------------------------Map------------------------------>
+		
+		<style>
+                  #map {
+                       width:100%;
+                       height:100%;
+                  }
+                </style>
+    
+
+		<!---------------------------------Map------------------------------>
+		
+
+		
+	</head>
+	
+	
+	
+	
+	
+	
+
+    <body class="grey lighten-3" style="width:100vw;">
+ 
+	  
+	  
+<!-------------------------------------------Nav Bar--------------------------------->
+<div class=" hide-on-med-and-down">
+ <nav style = "height: 150px;">
+    <div class="nav-wrapper blue darken-2"  style="padding-top:60px;">
+	
+		  <a class="flow-text" href="https://skylinelabs.in/blog" class=" white-text flow-text hide-on-med-and-down " style="left:15vw; position:relative;">
+			SKYLINE BLOG
+		</a>
+      
+      <ul class="right hide-on-med-and-down" >
+	  
+		
+
+		<li class="waves-effect"><a class="white-text" href="https://skylinelabs.in/blog">Home</a></li>
+		<li class="waves-effect"><a class="white-text" href="https://www.skylinelabs.in">Website</a></li>
+        <li class="waves-effect"><a class="white-text  modalContact-trigger" href="#modalContact">Contact</a></li>
+		
+	
+      </ul>
+	  
+      
+    </div>
+  </nav>
+ </div>
+ 
+ 
+ 
+ <div class="navbar-fixed hide-on-large-only">
+
+ <nav>
+    <div class="nav-wrapper white">
+      <a href="#" data-activates="mobile-menu" alt=":" style="left:10px;" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
+	  
+	   <a href="#" class=" blue-text flow-text hide-on-large-only " style="left:50px; position:relative;">
+	  Skyline Blog
+	  </a>
+	  
+	  
+      <ul class="side-nav" id="mobile-menu">
+		<div class="blue" style="width:100%; height:auto;">
+			<img src="https://www.skylinelabs.in/images/Logo/s_white.png" style=" width:100%; height:auto; padding: 60px;" >
+		</div>
+		
+		<li ><a class="blue-text waves-effect waves-light" href="https://skylinelabs.in/blog">Blog</a></li>
+		<li ><a class="blue-text waves-effect waves-light" href="https://www.skylinelabs.in">Website</a></li>
+        <li ><a class="blue-text waves-effect waves-light modalContact-trigger" href="#modalContact">Contact</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+ </div>
+  
+<!-------------------------------------------Nav Bar--------------------------------->  
+
+
+
+
+<!---------------------------------------Blog Starts----------------------------------------->
+	
+			<div class = "section white  " style="width:100%;">
+				<div class = "container">
+					<div class = "row">
+						<div class = "col l8 m12 offset-l2">
+						
+							<p class = " indigo-text">
+								ABHILASH MHAISNE
+							</p>
+							<p class = "lighten-2 grey-text ">February 06 2016</p>
+								
+							<img 
+								class = "attach-image center-align center" width = "100%" height = "auto" src = "images/tensorflow.jpg">
+							</img> 
+							
+							<br>
+							 
+							<h4 class="post-title flow-text indigo-text center" style="padding-top:50px;">Reinvent the wheel : Google open sources tensorflow and seesaw within a span of months</h4>
+							
+							
+									
+							<section class = " ">
+									
+								
+								<article>
+								The current age is the age of revolution of the computer world. Going through the period of IBMs revolutionary inventions, to microsoft and apple's making a computer a household appliance, a lot is going on which has, and might even change more of how we lead our lives.
+								</article>
+								
+								</br>
+
+								<article>
+								Google has been arguably the most rapidly progressing player in this world of software and information technology. Starting with its search engine, it has conquered the IT world with products like gmail, docs, drive, the browser chrome and many others. The very simplicity and user friendliness of these has made google the forerunner in these services.
+								</article>
+								<br>
+								
+								<article>
+								Tensorflow is the artificial intelligence / machine learning / deep learning library by google. Artificial intelligence or AI, in simple terms, consists of the study of developing machines with human like intelligence. Machine learning is an integral part of AI, and it involves study of computer algorithms which improve with experience. 
+								</article>
+								<br>
+								
+								 <img 
+								class = "attach-image center-align center" width = "100%" height = "auto" src = "images/blog3/image1.jpg">
+								</img> 
+								
+								<article class="center center-align grey-text">
+									Image source : technewstoday.com
+								</article>
+								
+								</br>
+								
+								<article>
+								Seesaw is the load balancer used by google. A load balancer is used to optimize resource use and avoid overload of any single resource. One can imagine how huge the google corporate infrastructure is. When earlier used services did not prove satisfactory, seesaw was developed by google.
+								</article>
+								
+								</br>
+
+								 <img 
+								class = "attach-image center-align center" width = "100%" height = "auto" src = "images/blog3/image2.jpg">
+								</img> 
+								
+								<article class="center center-align grey-text">
+									Image source : siliconangel.com
+								</article>
+								
+								</br>
+								
+								<article>
+									Now what do we mean by the term open source? An open source software is licensed in such a way that its source code can be publicly read, studied, modified, redistributed, crediting the original author. While many variations in the licensing exist, most open source licenses promise the above. Open source software developers aim to give their users maximum freedom with the software. The development model of open source software is thus democratic in nature as literally anyone is allowed to propose changes to it. Lot of corporations have been open sourcing their software due to the obvious benefits recieved.
+								</article>
+								
+								</br>
+							
+								
+								<article>
+								Google has been one amongst the top five contributors to the linux kernel. It also hosts a number of other open source software. And open sourcing tensorflow and seesaw has added to this arsenal of google. Tensorflow was open sourced in November 2015, and not much later in January 2016, google open sourced, to everyone's surprise, its main load balancer seesaw.	
+								</article>
+								
+								</br>
+								
+								<article>
+									Tensorflow is described by google as a 2nd generation machine learning system, improving on their earlier one called DistBelief. Not only does it offer support for deep and machine learning, but it also is able to compute any computation which can be expressed as a flow graph [ https://en.wikipedia.org/wiki/Flow_graph_(mathematics) ].
+									Tensorflow has been open sourced under the Apache 2.0 license. This makes it possible for anyone to use the code of tensorflow.
+									Open sourcing it has obvious benefits for google. Literally anyone from anywhere in the world can contribute to its source code,
+
+									<div class="indigo-text">
+<a href="https://github.com/tensorflow/tensorflow">
+									hosted on the github repository. [ https://github.com/tensorflow/tensorflow ].
+</a></div>
+								</article>
+								
+								</br>
+
+
+                                                                <center><img 
+								class = "attach-image center-align center" width = "70%" height = "70%" src = "images/blog3/tensors_flowing.gif">
+								</img></center> 
+
+
+
+                                                                <article class="center center-align grey-text">
+									Image source : www.tensorflow.org
+								</article>
+                                                                 <br> 
+								
+								<article>
+									However, as Lukas Biewald, the CEO of CrowdFlower states it, the real value of machine learning lies in the data, not so much in the source code and algorithms. What google won't share with the world is the huge amount of data gathered by them, which helps their machines learn more efficiently. For instance, for a machine to intelligently recognize a photograph of a bird, it will need an extremely large amount of photographs of that bird.
+									Erik Mueller, CEO of Symbolic AI, LLC is of the opinion that this open sourcing of tensorflow will rather focus our attention on the mathematics used, instead of learning deeply about human thought processes. Tensorflow mainly deals with machine learning requiring numerical computations, eg. Artificial neural networks. Mueller states that such systems consist of too many numbers for people to make sense of.
+								</article>
+								
+								</br>
+								<article>
+									AI should be human-stated based. Meaning it should be able to properly interact with human beings to develop itself. The Tensorflow source code will surely be a milestone in the world of AI but we need to look beyond it, to design an AI system assisting humans in day to day problems, rather than making humans solve its own problems through numerical computations.
+								</article>
+								
+								</br>
+								
+								<article>
+									Seesaw was developed by google due to absence of any decent load balancing solution. It helps largely in automating configuration changes, a major need for site reliablity engineers.
+									Open sourcing this tool, google has let a lot of enterprises, which would require to manage their corporate infrastructure, in a much robust way. Again its released under Apache 2.0 license and it is built on linux. Written in the Go programming language, seesaw is able to gain advantage of a multi process architecture and enables it to terminate a process if it enters an unknown state. 
+									The release code will be a huge advantage for researchers and scholars studying any field related to load balancing, computer clusters or even on scheduling algorithms.
+
+								</article>
+								
+								</br>
+								
+								<article class="indigo-text" ><a href="https://github.com/google/seesaw">
+									The source code of seesaw can be found here. [ https://github.com/google/seesaw ] </a>
+								</article>
+								
+								
+								
+							<br><br>
+							
+							</section>
+							
+						
+						
+							
+							<div class="a2a_kit a2a_kit_size_32 a2a_default_style center">
+							
+
+							<a target="_blank" class="a2a_button_facebook" href = "https://www.facebook.com/sharer/sharer.php?u=http%3A//www.skylinelabs.in/blog/Google-open-sourcing-tensorflow-and-seesaw.html"><img src = "images/fb.png" height = "32" width = "32"></img></a>
+							<a target="_blank" class="a2a_button_twitter" href = "https://twitter.com/home?status=http%3A//www.skylinelabs.in/blog/Google-open-sourcing-tensorflow-and-seesaw.html"><img src = "images/twitter.png" height = "32" width = "32"></img></a>
+							<a target="_blank" class="a2a_button_google_plus" href = "https://plus.google.com/share?url=http%3A//www.skylinelabs.in/blog/Google-open-sourcing-tensorflow-and-seesaw.html"><img src = "images/googleplus.png" height = "32" width = "32"></img></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+	
+<!---------------------------------------Blog Ends----------------------------------------->
+
+<!---------------------------------------About writer-------------------------------->
+<div class="grey lighten-3" style="height:150px; width:100vw; ">
+
+	<div class="center flow-text indigo-text" style="padding-top:50px;">
+		About Abhilash Mhaisne
+	</div>
+	
+	<p class="center">
+		Chief content manager at Skyline blog. Free software contributor, wikipedia editor and tech-evangelist. Working on  Linux kernel and Moodle</br>
+		<a href="https://twitter.com/55abhilash">@55abhilash</a>
+	</p>
+
+</div>
+<!---------------------------------------About writer-------------------------------->
+
+
+
+		
+			
+<!---------------------------Contact Modal Structure ---------------------------------->
+<form class="col s12" action="https://www.skylinelabs.in/contact.php" method="post" name="contact">	
+  <div id="modalContact" class="modal modal-fixed-footer">
+    <div class="modal-content">
+	
+
+  <div class="row">
+	<h4 class="center">Contact us</h4>
+	
+
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix blue-text">account_circle</i>
+          <input name="name" id="icon_prefix" type="text">
+          <label for="icon_prefix">Name</label>
+        </div>
+	  </div>
+	  
+	  <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix blue-text">phone</i>
+          <input name="phone" id="icon_telephone" type="tel">
+          <label for="icon_telephone">Contact number</label>
+        </div>
+      </div>
+	  
+	  <div class="row">
+        <div class="input-field col s12">
+		  <i class="material-icons prefix blue-text">email</i>
+          <input name="email" id="email" type="email" >
+          <label for="email" >Email</label>
+        </div>
+      </div>
+	  
+	  <div class="row">
+        <div class="input-field col s12">
+		  <i class="material-icons prefix blue-text">message-box</i>
+          <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+      </div>
+
+  </div>
+  
+
+  
+</div>
+	
+     <div style="right:2vmin; position:absolute; bottom: 2vh; z-index:99;">
+	  <a onClick="document.forms['contact'].submit();" type="submit" name="submit" value="Submit" class="modal-action modal-close btn-floating btn-large waves-effect waves-light red"><i class="material-icons">send</i></a>
+    </div>
+  </div>
+      
+</form>
+<!--------------------------------Modal Ends------------------------------------->
+
+
+
+<!---------------------------Map Modal Structure ---------------------------------->
+
+<div id="modalMap" class="modal modal-fixed-footer">
+	<div id="map" class="modal-content">
+		
+           <div ></div>
+
+	</div>
+</div>
+
+<!--------------------------------Map Modal Ends------------------------------------->
+
+
+			
+			
+<!-------------------------------Footer------------------------------>
+<footer>
+
+ 	<div id="footer-nav" class="blue darken-3" style="width:100vw;bottom:-50px; position:relative;" >
+		<div class="container">
+			<div class="row" style="padding-bottom:30px; padding-top:20px;">
+				<div class="col s12 m3">
+					<p class="white-text darken-3 center bold">NEXAR TECHNOLOGIES</p></br>
+					 	<ul class="center" id="MapClick">
+							<li><a class="white-text center" href="http://www.nexartech.com">Website</a></li>
+							<li><a class="white-text center" href="mailto:nexartechnologies@gmail.com">Email</a></li>
+							<li><a class="white-text center modalMap-trigger" href="#modalMap" >Locate us</a></li>
+						</ul>
+				</div>
+				<div class="col s12 m3">
+					<p class="white-text darken-3 center">Skyline Labs</p></br>
+					  	<ul class="center">
+							<li><a class="white-text center" href="https://www.skylinelabs.in/index.html">Website</a></li>
+							<li><a class="white-text center" href="https://www.skylinelabs.in/partner.html" >Partner with us</a></li>
+							<li><a class="white-text center" href="https://www.skylinelabs.in/privacy.html" >Privacy policy</a></li>
+						</ul>			
+				</div>
+				<div class="col s12 m3">
+					<p class="white-text darken-3 center">SOCIAL</p></br>
+					 	<ul class="center">
+							<li><a class="white-text center" href="https://www.facebook.com/theterribilis">Facebook</a></li>
+							<li><a class="white-text center" href="https://twitter.com/skylinelabs">Twitter</a></li>
+							<li><a class="white-text center" href="mailto:contact@skylinelabs.in" target="_blank">Email</a></li>
+						</ul>
+				</div>
+				<div class="col s12 m3">
+				
+						<!-- Begin MailChimp Signup Form -->
+						<div id="mc_embed_signup">
+						<form action="//skylinelabs.us12.list-manage.com/subscribe/post?u=fe01adba7acf4f839b4ddebc9&amp;id=9e5bcceb56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                                     <div id="mc_embed_signup_scroll">
+							
+								<p class="white-text center" style="margin-bottom: 0px;">Join the newsletter</p></br></br>
+						
+									<div class="mc-field-group center">
+										<input type="email" value="" name="EMAIL" class="center required email" id="mce-EMAIL" placeholder="Enter email" style="color:#fbc02d;">
+									</div>
+						
+									<div id="mce-responses" class="clear center">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>    
+							
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px;">
+										<input type="text" name="b_fe01adba7acf4f839b4ddebc9_9e5bcceb56" class=" mailchimp" tabindex="-1" value="">
+									</div>
+									
+									<div class="center">
+									<div class="waves-effect center" >
+										<input class="btn center orange darken-1 white-text" type="submit" value="Subscribe"  name="subscribe to newsletter" id="mc-embedded-subscribe">
+									</div>
+									</div>
+							</div>
+						</form>
+						</div>
+						<!--End mc_embed_signup-->						 
+				</div>
+			</div>
+                        
+		</div>
+		<h6 class="center white-text blue darken-3">&copy Copyright Skyline labs 2016-17</h6>
+		
+	</div>
+</footer>
+		
+<!-------------------------------Footer------------------------------>
+
+<script>
+
+$( document ).ready(function(){
+	$(".button-collapse").sideNav();
+	$('.modalContact-trigger').leanModal();  
+	$('.modalMap-trigger').leanModal();
+	
+	/**********************************************FAB 1st Div****************************************/	
+
+        $( "#MapClick" ).click(function() {
+         google.maps.event.trigger(map, 'resize');
+        });
+
+	/**********************************************FAB 1st Div****************************************/	
+});
+</script>
+
+<!------------------------------------------Maps---------------------------------------------->
+	
+<script>
+function initMap() {
+  var myLatLng = {lat: 18.574, lng: 73.68054584};
+
+  var center= {lat: 18.60, lng: 73.66};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: myLatLng
+  });
+
+
+google.maps.event.trigger(map, 'resize');
+          
+var reCenter = new google.maps.LatLng(18.60, 73.66);
+map.setCenter(reCenter);
+
+  
+
+ var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h4 id="firstHeading" class="firstHeading">Nexar Technologies</h4>'+
+      '<div id="bodyContent">'+
+      '<p><b>Skyline labs</b>' + '</br>' +
+      'C-1704, Sangaria, Megapolis, '+
+      'Hinjewadi phase 3, Pune '+'</br>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Nexar technologies'
+  });
+
+ marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+
+
+
+}
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCU78cziaiOzu6Y86ar4KusXWsIwwEG-4&signed_in=true&callback=initMap"></script>
+
+
+
+<!------------------------------------------Maps---------------------------------------------->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72860022-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		
+		
+
+    </body>
+  </html>

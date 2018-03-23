@@ -1,0 +1,119 @@
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ---------------------------------------- /
+/				        SOCIAL ICONS	 		        	/
+/ ---------------------------------------- */
+
+.socialIconWrap {
+  font-family: 'Bree Serif', 'serif';
+  color: #EEE;
+  font-size: 25px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.socialIcons {
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 0px;
+	opacity: 0.9;
+	border-radius: 0px;
+	transition: 0.6s;
+}
+
+.icon_facebook 	{background: url("../../images/indexpage/images/icon_facebook.png")  #3B5998; background-size: 30px; background-position: center; background-repeat: no-repeat;}
+.icon_twitter	  {background: url("../../images/indexpage/images/twitter.png")   #55ACEE; background-size: 60px; background-position: center; background-repeat: no-repeat;}
+.icon_youtube	  {background: url("../../images/indexpage/images/social-youtube-outline.png")   #cd201f; background-size: 60px; background-position: center; background-repeat: no-repeat;}
+.icon_google	{background: url("../../images/indexpage/images/icon_googleplus_b2.png") #ec721f; background-size: 50px; background-position: center; background-repeat: no-repeat;}
+
+
+.socialIcons:hover {
+		opacity: 1.0;
+		transition: 0.6s;
+		transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		-moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+	}
+
+	.icon_facebook:hover::after {
+		content: 'FaceBook';
+		position: relative;
+		display: block;
+		padding: 5px;
+		width: 110px;
+		text-align: center;
+		background: #3B5998;
+    	color: #FFF;
+		top: 65px;
+		margin-left: -20px;
+		border-radius: 5px;
+		font-size: 20px;
+		font-family: 'Bree Serif', 'serif';
+		-webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		-moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);		
+	}
+
+	.icon_twitter:hover::after {
+		content: 'Twitter';
+		position: relative;
+		display: block;
+		padding: 5px;
+    color: #FFF;
+		width: 110px;
+		text-align: center;
+		background: #55ACEE;
+		top: 65px;
+		border-radius: 5px;
+		margin-left: -20px;
+		font-size: 20px;
+		font-family: 'Bree Serif', 'serif';
+		-webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		-moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);	}
+
+	.icon_youtube:hover::before {
+		content: 'YouTube';
+		position: relative;
+		display: block;
+		padding: 5px;
+		width: 110px;
+		text-align: center;
+    color: #FFF;
+		background: #cd201f;
+		top: 65px;
+		border-radius: 5px;
+		margin-left: -20px;
+		font-size: 20px;
+		font-family: 'Bree Serif', 'serif';
+		-webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		-moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+		box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);	}
+
+.icon_google:hover::after {
+	content: 'Google';
+	position: relative;
+	display: block;
+	padding: 5px;
+	width: 110px;
+	text-align: center;
+	background: #d66c1b;
+	color: #FFF;
+	top: 65px;
+	margin-left: -20px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: 'Bree Serif', 'serif';
+	-webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+	-moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+	box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.67);
+}

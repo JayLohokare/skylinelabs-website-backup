@@ -1,0 +1,88 @@
+.hovercard{
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.hovercard:hover .overlay{
+  opacity: 0.75;
+  transform: scale(1);
+  transition: 0.5s;
+
+}
+
+.hovercard:hover .leftentry{
+  right: 0;
+}
+
+.hovercard:hover .rightentry{
+  left: 0;
+}
+
+
+.hovercard:hover span{
+  opacity: 1;
+  z-index: 999;
+  transition: 0.5s;
+
+}
+
+.hovercard:hover .leftentryspan{
+  right: 0%;
+}
+
+.hovercard:hover .rightentryspan{
+  left: 50%;
+}
+
+.overlay{
+  position: absolute;
+  background-color: rgba(83, 116, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+ /*right: 36vmax;*/
+  transform: scale(1.3);
+  opacity: 0;
+  transition: transform .4s ease 0s;
+}
+
+
+.hovercard .leftentry{
+  right: 36vmax;
+}
+
+.hovercard .rightentry{
+  left: 36vmax;
+}
+
+.hovercard span{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  transition: 0.5s;
+  font-size: 2em;
+  color: #fff;
+  font-family: Sans-serif;
+  opacity: 0;
+  z-index: 0;
+}
+
+.hovercard .leftentryspan{
+  right: 100%;
+}
+
+.hovercard .rightentryspan{
+  left: 100%;
+}
+
+.hovercard img{
+  transition: transform .8s ease;
+}
+
+.hovercard:hover img{
+  transform: scale(1.1);
+}

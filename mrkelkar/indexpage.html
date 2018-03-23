@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <title>BJP</title>
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize-0.97.5.js"></script>
+    <script type="text/javascript" src="js/indexpage/flip.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link type="text/css" rel="stylesheet" href="css/indexpage/matrix.css" media="screen,projection"/>
+
+    <link href="css/indexpage/stylesocial.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="css/indexpage/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/indexpage/hover-flat.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/indexpage/matrix.css" media="screen,projection"/>
+
+    <link href="css/indexpage/hovercard.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/indexpage/flip.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/indexpage/blog-card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/indexpage/font-awesome.min.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+    <link href="css/indexpage/mainimageeffect.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+
+
+    <link href="fonts/materializeicons.css" rel="stylesheet">
+
+    <!--CSS-->
+    <style>
+        .butn {
+            background-color: #8ac7db;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 0 5px;
+            cursor: pointer;
+            border-radius: 8px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .butn:hover {
+            background-color: #1e5162;
+            color: #ffeccc;
+        }
+
+        .butn:active {
+            background-color: #12303b;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .welc {
+            border: 2px black;
+            width: auto;
+            height: 100px;
+            padding: 20px 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #ffffe6;
+        }
+
+        i.con {
+            color: ivory;
+        }
+
+        body {
+            background-image: url(images/indexpage/images/Thane1.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* #mainimage {
+             width: auto;
+             height: 50%;
+             margin: 0;
+             margin-bottom: 10px;
+         }*/
+
+        #c2 {
+            width: auto;
+            height: 172px;
+            margin: 0px;
+        }
+
+        #c3 {
+            width: auto;
+            height: 350px;
+            margin-top: -30px;
+            margin-bottom: 0px;
+        }
+
+        #t1 {
+            font-family: "Lucida Console";
+            font-size: 20px;
+            letter-spacing: -1px;
+            color: ivory;
+        }
+
+        #t2 {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+        #t3 {
+            color: #4d1a00;
+        }
+
+        #t4:hover {
+            text-decoration: underline;
+        }
+
+        #pic {
+            float: left;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #fpic {
+            border-radius: 20%;
+        }
+
+        .ftr {
+            margin-top: -10px;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            background-color: ivory;
+            height: auto;
+        }
+
+        li {
+            display: inline;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+
+        }
+
+        @media only screen and (min-width: 601px) {
+            #mainimage {
+                height: 335px;
+            }
+
+            #socialtabs {
+                margin-top: -17px;
+            }
+
+            .meranav {
+                margin-top: 20px;
+            }
+
+            .ftr {
+                margin-top: 20px;
+            }
+
+            #bottomcards {
+                margin-top: -20px;
+            }
+
+            #c2 img {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+            }
+
+            .row .leftpaddingsmall {
+                padding-left: 0px;
+            }
+
+            .marginbottomsmall {
+                margin-bottom: 0px;
+            }
+
+            #c2 {
+                width: auto;
+                height: 161.5px;
+                margin: 0px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            #c2 {
+                margin-top: 10px;
+            }
+
+            .meranav {
+                margin-top: 20px;
+            }
+
+            #social_elem {
+
+            }
+
+            #c2 img {
+                width: 100%;
+                height: auto;
+                margin: 0px;
+            }
+        }
+
+        .meranav {
+            text-align: center;
+        }
+
+        #tabslist {
+            display: inline-block;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        }
+
+        @media only screen and (min-width: 991px) {
+            .container {
+                width: 80%;
+            }
+
+            #lowercardsrow {
+                margin-bottom: 10px;
+            }
+
+            .meranav nav.pinned {
+                width: 80%;
+                margin-top: 0px;
+            }
+
+            .welc {
+                margin-top: 22px;
+                margin-bottom: -9px;
+            }
+
+            .meranav {
+                margin-bottom: -10px;
+            }
+
+            #facebooklikepage {
+                margin-top: -24px;
+                width: 104%;
+            }
+        }
+
+        .hovercard:hover .overlay span {
+            opacity: 1;
+            /*transform: scale(1);*/
+        }
+
+        .flip-container, .front, .back {
+            width: 100%;
+            height: 161.5px;
+        }
+
+        @media (max-width: 800px) {
+            .ctile.tile3.flip-container, .ctile.tile4.flip-container, .ctile.tile6.flip-container {
+                width: 100%;
+                height: 161.5px;
+            }
+        }
+
+        .flip-container:hover .back, .flip-container.hover .back {
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+            height: 161.5px;
+        }
+
+        @media only screen and (min-width: 601px) {
+            .row .col.m3 {
+                width: 25%;
+                margin-left: auto;
+                left: auto;
+                right: auto;
+                margin-bottom: -10px;
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 991px) {
+
+            #helloupper {
+                margin-top: 9px;
+            }
+
+            #bottomcards {
+                margin-top: -10px;
+            }
+
+            #belownav {
+                margin-bottom: 10px;
+            }
+
+            .meranav nav.pinned {
+                width: 95%;
+                margin-top: 0px;
+            }
+
+            .welc {
+                margin-top: 22px;
+                margin-bottom: -9px;
+            }
+
+            .meranav {
+                margin-bottom: -10px;
+            }
+
+        }
+
+        #helloshowonmediumleft {
+            padding-left: 0.75em;
+        }
+
+        #hoverflatleft {
+            padding-left: 0.75em;
+        }
+
+        @media only screen and (max-width: 599px) {
+            #mainimage {
+                margin-bottom: 15px;;
+            }
+
+            #readbooks {
+                padding-right: 5px;
+            }
+
+            #helloupper {
+                margin-bottom: -17px;
+            }
+
+            #dusrahello {
+                padding-bottom: 14px;
+            }
+
+            #peoplefirst {
+                padding-left: 4px;
+            }
+
+            #lowercardsrow {
+                margin-bottom: -7px;
+            }
+
+            #hoverflatmiddle {
+                margin-top: 15px;
+            }
+
+            #hoverflatright {
+                margin-top: 15px;
+            }
+
+            .meranav nav.pinned {
+                width: 90%;
+                margin-top: 0px;
+            }
+
+            .welc {
+                margin-top: 22px;
+                margin-bottom: -27px;
+            }
+
+            .meranav {
+                margin-bottom: -10px;
+            }
+        }
+
+        nav ul a {
+            padding: 0 32px;
+        }
+
+        .fad-blue {
+            background-color: #186ec2;
+        }
+
+        nav ul a {
+            font-weight: 700;
+        }
+
+        @font-face {
+            font-family: roboto2regular;
+            src: url('fonts/indexpage/roboto/Roboto-Regular.ttf');
+        }
+
+        nav {
+            z-index: 1000;;
+        }
+
+        .icon_twitter {
+            background-size: 38px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon_youtube {
+            background-size: 38px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon_facebook {
+            background-size: 22px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon_google {
+            background-size: 38px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .whitefont {
+            color: white;
+        }
+
+        /*.meranav nav ul li:hover{
+            background-color: #4d1919;
+        }*/
+    </style>
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <div class="welc">
+        <a href="#">
+            <img src="images/#.jpg">
+        </a>
+    </div>
+
+
+    <div class="meranav">
+        <nav>
+            <div class="nav-wrapper fad-blue">
+                <a href="#" class="brand-logo show-on-medium-and-down hide-on-med-and-up">&nbsp &nbsp Sanjay Kelkar</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="hide-on-med-and-down" id="tabslist">
+                    <li><a href="indexpage.html">Home</a></li>
+                    <li><a href="badges.html">About</a></li>
+                    <li><a href="newspage.html">News</a></li>
+                    <li><a href="#">Social Contributions</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#">Governing Values</a></li>
+                </ul>
+
+                <ul class="side-nav fad-blue" id="mobile-demo">
+                    <img class="responsive-img" src="images/indexpage/images/bjpflower.jpg">
+                    <a style="color: white" href="#">About</a>
+                    <a style="color: white" href="newspage.html">News</a>
+                    <a style="color: white" href="#">Social Contributions</a>
+                    <a style="color: white" href="contactus.html">Contact Us</a>
+                    <a style="color: white" href="#">Governing Values</a>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <br>
+
+    <!--Main Image id=c1-->
+
+    <div class="row" id="belownav"><!--Main image + 6 cards-->
+
+        <div class="col s12 m6 l4" id="mainimage">
+
+
+            <ul class="caption-style-1">
+                <li>
+                    <img class="responsive-img" src="images/indexpage/images/obama1.jpg">
+
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h1>Sanjay Kelkar</h1>
+
+                            <p>MLA - Thane</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <!-- 4 cards to right of main image-->
+
+        <div class="col s12 m6 l8">
+
+            <!-- Upper Cards id=c2-->
+            <div class="marginbottomsmall row">
+
+
+                <div class="leftpaddingsmall col s6 m6 l3" id="readbooks">
+
+                    <div class="ctile tile6 flip-container">
+                        <div class="flipper"><a href="#">
+                                <div class="front text">Read books<br/> written by<br/> Sanjay Kelkar</div>
+                                <div class="back text"> Read books<br/> written by<br/> Sanjay Kelkar</div>
+                            </a></div>
+                    </div>
+
+                </div>
+
+                <div class="leftpaddingsmall col s6 m6 l3">
+                    <div class="cardflip effect__random upperflipcard" data-id="11">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="leftpaddingsmall col s12 m12 l6" id="helloupper">
+                    <div class="hovercard" id="c2">
+                        <img src="images/indexpage/images/news7.jpg" alt=""/>
+
+
+                        <span class="leftentryspan">Hello...</span>
+
+                        <div class="overlay leftentry">
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- Lower Cards id=c2-->
+            <div class="hide-on-med-only row" id="lowercardsrow">
+
+
+                <div class="leftpaddingsmall col s12 m6" id="dusrahello">
+                    <div class="hovercard" id="c2">
+                        <img src="images/indexpage/images/news8.jpg" alt=""/>
+
+                        <span class="rightentryspan">Hello...</span>
+
+                        <div class="overlay rightentry">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leftpaddingsmall col s6 m3">
+                    <div class="cardflip effect__random lowerflipcard" data-id="12">
+                        <div class="card__front">
+                            <span class="card__text">front</span>
+                        </div>
+                        <div class="card__back">
+                            <span class="card__text">back</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftpaddingsmall col s6 m3" id="peoplefirst">
+
+
+                    <!--<div class="card deep-orange accent-1 waves-effect waves-block waves-light" id="c2">
+                        <div class="card-content">
+                            <span class="card-title" id="t1">Project</span>
+                        </div>
+                        <div class="card-action">
+                            <a href="#"><i class="con small material-icons right">assignment</i></a>
+                        </div>
+                    </div>-->
+
+                    <div class="ctile tile3 flip-container">
+                        <div class="flipper">
+                            <a href="#">
+                                <div class="front text">People First<br/>
+                                    Development First
+                                </div>
+                                <div class="back text"> People First<br/>
+                                    Development First
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- End of 4 cards-->
+
+    </div>
+
+    <!-- Showing on med the hidden row-->
+    <div class="show-on-medium hide-on-large-only hide-on-small-only row" id="rowshowonmediumonly">
+
+
+        <div class="leftpaddingsmall col s12 m6" id="helloshowonmediumleft">
+            <div class="hovercard" id="c2">
+                <img src="images/indexpage/images/news8.jpg" alt=""/>
+
+                <span class="rightentryspan">Hello...</span>
+
+                <div class="overlay rightentry">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="leftpaddingsmall col s12 m3">
+            <div class="cardflip effect__random lowerflipcard" data-id="12">
+                <div class="card__front">
+                    <span class="card__text">front</span>
+                </div>
+                <div class="card__back">
+                    <span class="card__text">back</span>
+                </div>
+            </div>
+        </div>
+        <div class="leftpaddingsmall col s12 m3">
+
+
+            <!--<div class="card deep-orange accent-1 waves-effect waves-block waves-light" id="c2">
+                <div class="card-content">
+                    <span class="card-title" id="t1">Project</span>
+                </div>
+                <div class="card-action">
+                    <a href="#"><i class="con small material-icons right">assignment</i></a>
+                </div>
+            </div>-->
+
+            <div class="ctile tile3 flip-container">
+                <div class="flipper">
+                    <a href="#">
+                        <div class="front text">People First<br/>
+                            Development First
+                        </div>
+                        <div class="back text"> People First<br/>
+                            Development First
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!--Bottom 3-->
+
+    <div class="row" id="bottomcards">
+        <div class="leftpaddingsmall col s12 m4 l3" id="hoverflatleft">
+
+            <div class="wrap-hover-flat">
+                <div class="front-hover-flat first">
+                    <p class="entypo-mobile">Lorem ipsumFront</p>
+                </div>
+                <div class="back-hover-flat">
+                    <h1 class="entypo-mobile">Lorem ipsumBack</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun...</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="leftpaddingsmall col s12 m4 l6" id="hoverflatmiddle">
+            <div class="wrap-hover-flat">
+                <div class="front-hover-flat second">
+                    <p class="entypo-mobile">Lorem ipsumFront</p>
+                </div>
+                <div class="back-hover-flat">
+                    <h1 class="entypo-mobile">Lorem ipsumBack</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun...</p>
+                </div>
+            </div>
+        </div>
+        <div class="leftpaddingsmall col s12 m4 l3" id="hoverflatright">
+            <div class="wrap-hover-flat">
+                <div class="front-hover-flat third">
+                    <p class="entypo-mobile">Lorem ipsumFront</p>
+                </div>
+                <div class="back-hover-flat">
+                    <h1 class="entypo-mobile">Lorem ipsumBack</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun...</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="row" id="socialtabs">
+
+        <div class="col s12 m6 l4" style="padding-right: 0">
+            <div class="card white lighten-2">
+                <div class="card-content black-text">
+                    <div class="socialIcons icon_facebook"></div>
+                    <span id="t2" class="indigo-text text-darken-1 card-title">FaceBook</span>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4" style="padding-right: 0">
+            <div class="card white lighten-3">
+                <div class="card-content black-text">
+                    <div class="socialIcons icon_youtube"></div>
+                    <span id="t2" class="red-text text-darken-4 card-title">YouTube</span>
+                    <hr>
+                </div>
+                <!--<iframe width="100%" height="auto" src="http://www.youtube.com/embed/ObvxJS_ckRg" frameborder="5px"
+                        allowfullscreen></iframe>-->
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+            <div class="card white lighten-4">
+                <div class="card-content black-text">
+                    <div class="socialIcons icon_twitter"></div>
+                    <span class="card-title blue-text text-darken-1" id="t2">Twitter</span>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=1070863549670125";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div class="hide-on-med-and-down" id="socialdivs">
+        <div class="row">
+            <div class="col s12 m6 l4" style="width: 100%; margin-top: -24px">
+                    <iframe id="fbframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkelkarsanjay%2F&tabs=timeline&width=340&height=499&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=1070863549670125"
+                            width="333" height="499" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true"></iframe>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="ftr">
+        <div class="row">
+            <div class="col s6 m3">
+                <ul>
+                    <li><a href="#" id="t3">Disclaimer</a></li>
+                    <li class="black-text"> |</li>
+                    <li><a href="#" id="t3">Privacy Policy</a></li>
+                    <li class="black-text"> |</li>
+                    <li><a href="#" id="t3">Contact</a></li>
+
+                </ul>
+                <p id="t3">Copyright &copy; 2016 Person</p>
+            </div>
+
+            <div class="col s6 m4">
+                <a href="#"><img src="images/indexpage/images/hello2.gif" width="100%" height="100px"></a>
+            </div>
+
+            <div class="col s12 m5">
+                <ul>
+                    <li><a href="#">
+                            <div class="socialIcons icon_facebook"></div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="socialIcons icon_twitter"></div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="socialIcons icon_youtube"></div>
+                        </a></li>
+                    <li><a href="#">
+                            <div class="socialIcons icon_google"></div>
+                        </a></li>
+                </ul>
+            </div>
+    </footer>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $('nav').pushpin({top: $('nav').offset().top});
+    });
+
+</script>
+
+<script type="text/javascript" src="js/indexpage/flip.js"></script>
+</body>
+</html>

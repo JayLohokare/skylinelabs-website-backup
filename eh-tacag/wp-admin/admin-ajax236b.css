@@ -1,0 +1,135 @@
+ .tickets__item_best::before { content: "Best!"; } 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.site, .btn, .news__title, .site__title, .site__title-info, .footer-menu dt, .contact-us p, .connect p,
+.site__form textarea, .site__form input, .time-schedule__text, .get-touch, .contact-us__address dd, 
+input.subscribe__email, .social-feed__txt, .facebook-content__interested
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.site__header, .site__title, .site__title_2, .site__title_subtitle, .site__form-sent, .btn, .comment-form .submit , .content h1, .content h2, .content h3, .content h4, .content h5,
+.get-touch__title, .schedule__date-btns, .schedule__time span, .schedule__main-place, .schedule__speaker-name, .sponsors__filters-form input, .tickets__price, .news__date, .news__title,
+.subscribe__title, .swiper-slide__title, .facebook-content__number, .facebook-content__link, .media-gallery__check, .media-gallery_profile .media-gallery__item span, .label, .label_big, 
+.countdown-timer, .countdown-timer, .countdown-timer span, .speakers__name {
+    font-family: 'Roboto', sans-serif;
+}
+
+    .footer-menu__link:hover, 
+    .header-menu__layout .menu > li > a:hover,
+    .header-menu__layout .menu > li.current-menu-item > a,
+    .header-menu .opened .header-menu__layout .menu > li > a,
+    .get-touch a,
+    .comment-body a, .comment-respond a,
+    .tickets__status,
+    .tickets__list li:before,
+    .header-menu__layout .menu > li > a:hover
+    {
+        color: #283593;
+    }
+    .btn, .comment-form .submit,
+    .menu-btn:hover span,
+    .menu-btn:hover span:before,
+    .menu-btn:hover span:after,
+    .schedule__concurrent:after,
+    .swiper-popup__close:hover:before,
+    .swiper-popup__close:hover:after,
+    .registration,
+    .header-menu__layout .menu > li > a:after,
+    .header-menu .sub-menu
+    {
+        background-color: #283593;
+    }
+    .btn, .comment-form .submit,
+    .get-touch a,
+    .swiper-popup .swiper-button-next:hover:before,
+    .swiper-popup .swiper-button-prev:hover:before
+    {
+        border-color: #283593;
+    }
+    .sub-menu::after {
+        border-color: transparent transparent #283593;
+    }
+    .btn, .comment-form .submit {
+        box-shadow: 0 5px 20px 0 black;
+    }
+
+ 
+    .social a,
+    .site,
+    .site__footer,
+    .site__title,
+    .footer-menu__link,
+    .hero,
+    .speakers__name,
+    .speakers__post,
+    .get-touch__title,
+    .schedule__date-btn,
+    .schedule__time span,
+    .schedule__speaker-name,
+    .contact-us p,
+    .contact-us__address dt,
+    .register-now,
+    .tickets__price,
+    .where__popup .label_big,
+    .news__content,
+    .connect,
+    .social-feed__inner,
+    .social-feed__txt,
+    .media-gallery_profile .media-gallery__item span,
+    .header-menu__layout .menu > li > a,
+    .sub-menu li a:hover,
+    .sub-menu li a.active,
+    .sub-menu li a,
+    .media-gallery_profile .site__title,
+    .sponsors__filters-form input,
+    .sponsors__filters-form input.placeholder
+    {
+        color: #000000;
+    }
+    .sponsors__filters-form input:-moz-placeholder {
+        color: #000000;
+    }
+    .sponsors__filters-form input::-webkit-input-placeholder {
+        color: #000000;
+    }
+    .site__form-sent,
+    .btn_2,
+    .btn_2:hover,
+    .btn_5,
+    .media-gallery,
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after
+    {
+        background-color: #000000;
+    }
+    .btn_2,
+    .btn_2:hover,
+    .btn_5,
+    .media-gallery__item
+    {
+        border-color: #000000;
+    }
+    .media-gallery__item_video:after {
+        border-color: transparent transparent transparent #000000;
+    }
+    .btn_2 {
+        box-shadow: 0 5px 20px 0 #000000;
+    }
+
+    .site__footer,
+    .hero_inner,
+    .speakers__person:hover .speakers__info,
+    .get-touch,
+    .schedule__date-btn.active,
+    .schedule__filters .ares-select__popup li:hover,
+    .schedule__filters .ares-select__popup li.active,
+    .schedule__time span,
+    .where,
+    .news,
+    .connect
+    {
+        background-color: #cdcdcd;
+    }

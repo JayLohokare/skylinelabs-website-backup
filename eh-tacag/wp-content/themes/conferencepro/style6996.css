@@ -1,0 +1,11 @@
+/*
+Theme Name: Conference Pro
+Theme URI: http://www.showthemes.com/conference-pro-wordpress-theme
+Author:  Showthemes
+Author URI: http://www.showthemes.com
+Version: 2.0.2
+*/
+
+.single-speaker .speaker-profile .schedule .site__centered {
+  display: none;
+}

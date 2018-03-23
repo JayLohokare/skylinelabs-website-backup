@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>      <html class="home home__index no-js lte9">  <![endif]-->
+<html class="home home__index no-js">       <!--<![endif]-->
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  
+  <title>FindX</title>
+
+
+		<meta name="msapplication-TileColor" content="#2196f3">
+		<meta name="msapplication-TileImage" content="images/logo.png" />
+		
+
+		
+	
+		<!--<meta name="theme-color" content="#2196f3">-->
+		
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+		<link rel="apple-touch-icon-precomposed" href="images/logo.png" />
+    
+		<meta name="keywords" content="Skyline labs, software developers, Skyline lab, COEP, FindX ,AI, Big data, Jay Lohokare,Reshul Dani,Ajit Rajurkar, GPS tracker, Internet of Things, http://www.mind-spark.org, Smart city" />
+		<meta name="description" content="Smart city platform based on AI and IoT">
+
+		<meta name="author" content="Nexar technologies Pvt Ltd">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=false" />
+		<meta name="viewport" content="user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/js/materialize.min.js"></script>
+	
+    
+		<link media="all" href="css/mycss.css" rel="stylesheet">
+
+  </head>
+  
+  
+  
+<body>
+
+	<div id="overlay" class="text-center vertical-center">
+	  <div class="container">
+		<div class="row">
+
+		  <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
+			<div id="phone-wrapper">
+			  <div id="phone-container">
+				<div id="images">  
+				  <img class="unveil" src="images/intro1.png" data-src="images/intro1.png"  />
+				  <img class="unveil" src="images/intro2.png" data-src="images/intro2.png" />
+				  <img class="unveil" src="images/intro3.png" data-src="images/intro3.png" />
+				  <img class="unveil" src="images/intro4.png" data-src="images/intro4.png" />
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>
+
+
+
+	<div class="main">
+	  <section id="bag-of-fun" class="text-center vertical-center">
+		<div class="container">
+		  <div class="row text-center">
+			<div class="col-xs-12 col-sm-7 col-sm-offset-5 text-white">
+				
+				<h4>Track location :</br></br>Locate your friends and family real-time !</h4> 
+				<h5>Get access to location and contacat details of government service at one click !</h5>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section id="express-yourself" class="text-center vertical-center">
+		<div class="container">
+		  <div class="row text-center">
+			<div class="col-sm-7 col-sm-offset-5 text-white">
+                               
+				<h4>Be a responsible citizen :</br></br>Post complaints and suggestions on to reach government officials</h4>
+				<h5>Add images, location, tags, invite friends, start events and lots more !</h5>
+			</div>
+		  </div>
+		</div>
+	  </section> 
+	  
+	  
+	  <section id="add-flair" class="text-center vertical-center">
+		<div class="container">
+		  <div class="row text-center">
+			<div class="col-sm-7 col-sm-offset-5 text-white">
+                               
+				<h4 >Smart SOS :</br></br>One-Click - Reach out to people who can help when in emergency.</h4> 
+				<h5>Help is near you, we help you reach it !</h5>				
+			</div>
+		  </div>
+		</div>
+	  </section> 
+
+	  
+	</div>
+	
+	
+
+    <div id="javascripts">
+		
+		<script src="javascript.js"></script>
+		<script type="text/javascript">
+			(function() {
+			  var beforeMoveCallback = null;
+			  if (!jQuery.support.cssProperty('transform')) {
+				var $images = $("#images");
+				beforeMoveCallback = function(idx) {
+				  $images.animate({
+					bottom: (idx-1)*200+'%'
+				  }, {
+					duration: 800,
+					queue: false
+				  });
+				}
+			  }
+
+			  var $window = $(window),
+				  $main   = $(".main"),
+				  curIdx  = 1;
+			  $main.onepage_scroll({
+				animationTime: 800,
+				beforeMove: beforeMoveCallback,
+				afterMove: function(idx) {
+				  // fix for unveil
+				  $window.trigger("scroll");
+
+				  Analytics.trackEvent(
+					"Slide View",
+					"Slide "+idx,
+					(idx > curIdx) ? "Down" : "Up"
+				  );
+
+				  curIdx = idx;
+				},
+				loop: false
+			  });
+
+			  $window.on("touchmove", function(e) {
+				e.preventDefault();
+			  });
+			})();
+		</script>
+
+    </div>
+
+	
+</body>
+
+</html>
+
